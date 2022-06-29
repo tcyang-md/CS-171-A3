@@ -26,6 +26,17 @@ Possible Knight Tour with max #squares visited in this (5x5) board:
 - `KnightBoard`: Chessboard class is a 2D array that has `n` size, keeps track of the number of moves in `moveCount`, and current position of the knight in `currentX` and `currentY`. There are also some helper methods such as `printChessBoard`, `copyBoard`, and `move` (checks if a knights move to a specific position is valid). There are also setters and getters to modify `moveCount`, `currentX`, and `currentY` positions.
 - `KnightTour`: Implements and prints a valid knight tour. This does not print all valid knight tours as the valid number of tours for a 6x6 board is 6,637,920 and the it only gets exponentially larger. The program essentially has all 8 moves of a knight listed out in two separate arrays `possibleRow` and `possibleCol`. It only adds valid moves from the current position to the stack. This for every single space that the knight can occupy until a board is found where `currentBoard.getMoveCount() == n * n` or if `n == 3 || n == 4` there is no solution where every space is visited so a solution with all but one space visited is valid.
 
+## Solution Times
+| Size | Time in ms |
+| :---------- | :---------- |
+| 3x3 | 0.771277 |
+| 4x4 | 10.917376 |
+| 5x5 | 55.889333 |
+| 6x6 | 236.791035 |
+| 7x7 | 90.314049 |
+| 8x8 | 94947.098818 |
+
+
 ## Visualization of the Stack
 ```
 $ java KnightTour 3
