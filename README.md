@@ -64,7 +64,9 @@ Stack: Round 4
 Stack: Round 5
 ...
 Stack: Round 6
+...
 Stack: Round 7
+...
 Stack: Round 8
 +--+--+--+
 | 1| 4| 7|
